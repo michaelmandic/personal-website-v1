@@ -17,15 +17,17 @@
       content="Personal website of Michael Mandic, a software engineer based in Belgrade, Serbia."
     />
   </head>
-  <body class="bg-zinc-900">
-    <nav class="absolute">
+  <body class="flex justify-center bg-zinc-900">
+    <header
+      class="fixed top-0 flex h-[4rem] w-full items-center justify-between bg-(--transparent-black) px-[1rem] backdrop-blur-sm md:m-[1rem] md:h-[3rem] md:max-w-[46rem]"
+    >
       <a
         href="https://mandic.dev"
         class="font-[JetBrains_Mono] font-extrabold text-white"
       >
         <span class="text-[#6FFF9D]">mandic</span>.dev
       </a>
-      <div>
+      <nav class="flex gap-[0.8rem]">
         <a
           class="inline"
           href="mailto:mihajlomandic27@gmail.com"
@@ -77,13 +79,13 @@
             />
           </svg>
         </a>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <section
-      class="flex h-[30rem] items-center justify-center bg-(--primary-green) font-[JetBrains_Mono] font-bold text-(--transparent-black)"
+      class="flex h-[30rem] w-full items-center justify-center bg-(--primary-green) font-[JetBrains_Mono] font-bold text-(--transparent-black)"
     >
       <div
-        class="m-[1rem] flex max-w-[44rem] basis-[44rem] flex-col gap-[2rem]"
+        class="m-[1rem] flex max-w-[44rem] basis-[44rem] flex-col gap-[2rem] pt-[5rem]"
       >
         <h1 class="text-6xl/[5rem]">
           Hi, I'm
