@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@keyframes heroAnimation {
+  0% {
+    background-position: 0 200px;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
 
 :root {
   --primary-green: #6FFF9D;
   --transparent-black: rgba(0, 0, 0, 0.7);
   --off-white: #f0f0f0;
   --off-black: #1e1e1e;
+  --hero-animation: heroAnimation 5s linear infinite forwards;
 }
+
