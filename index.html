@@ -17,15 +17,18 @@
       content="Personal website of Michael Mandic, a software engineer based in Belgrade, Serbia."
     />
   </head>
-  <body class="flex justify-center bg-zinc-900">
+  <body class="flex justify-center bg-(--off-black)">
     <header
-      class="fixed top-0 flex h-[4rem] w-full items-center justify-between bg-(--transparent-black) px-[1rem] backdrop-blur-sm md:m-[1rem] md:h-[3rem] md:max-w-[46rem]"
+      class="fixed top-0 flex h-[64px] w-full items-center justify-between bg-(--off-black) px-[24px] outline-2 outline-(--off-white) backdrop-blur-sm md:mt-4 md:max-w-[750px]"
     >
       <a
         href="https://mandic.dev"
         class="font-[JetBrains_Mono] font-extrabold text-white"
       >
-        <span class="text-[#6FFF9D]">mandic</span>.dev
+        <span
+          class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent"
+          >mandic</span
+        >.dev
       </a>
       <nav class="flex gap-[0.8rem]">
         <a
@@ -81,17 +84,36 @@
         </a>
       </nav>
     </header>
-    <section
-      class="flex h-[30rem] w-full items-center justify-center bg-(--primary-green) font-[JetBrains_Mono] font-bold text-(--transparent-black)"
-    >
+    <section class="w-full">
       <div
-        class="m-[1rem] flex max-w-[44rem] basis-[44rem] flex-col gap-[2rem] pt-[5rem]"
+        class="flex h-[30rem] w-full items-center justify-center bg-(--off-white) font-[JetBrains_Mono] font-bold text-(--off-black)"
       >
-        <h1 class="text-6xl/[5rem]">
-          Hi, I'm
-          <span class="bg-(--transparent-black) text-white">Michael</span>!
-        </h1>
-        <h2 class="text-2xl md:text-2xl">Software Engineer based in Serbia_</h2>
+        <div
+          class="m-[1rem] flex max-w-[44rem] basis-[44rem] flex-col gap-[2rem] pt-[5rem]"
+        >
+          <h1 class="text-6xl/[5rem]">
+            Hi, I'm
+            <span
+              class="bg-linear-[0deg,#833AB4_0%,#FD1D1D_50%,#FCB045_100%] text-white"
+              >Michael</span
+            >!
+          </h1>
+          <h2 class="text-2xl md:text-2xl">
+            Software Engineer based in Serbia_
+          </h2>
+        </div>
+      </div>
+
+      <div class="flex w-full items-start justify-end">
+        <svg
+          class="-mt-[1px] w-[70vw]"
+          viewBox="0 0 1178 95"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1178" height="58" fill="#f0f0f0" />
+          <rect x="1117" y="56" width="61" height="37" fill="#f0f0f0" />
+        </svg>
       </div>
     </section>
   </body>
