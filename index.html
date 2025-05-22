@@ -32,7 +32,7 @@
   <body class="flex flex-col items-center bg-(--off-black) font-[Inter]">
     <header
       id="header"
-      class="pointer-events-none fixed top-0 flex h-[64px] w-full items-center justify-between bg-(--off-black) px-[24px] opacity-0 outline-2 outline-(--off-white) backdrop-blur-sm transition-all md:mt-4 md:max-w-[750px]"
+      class="pointer-events-none fixed top-0 z-[9999] flex h-[64px] w-full items-center justify-between bg-(--off-black) px-[24px] opacity-0 outline-2 outline-(--off-white) backdrop-blur-sm transition-all md:mt-4 md:max-w-[750px]"
     >
       <a
         href="https://mandic.dev"
@@ -103,7 +103,7 @@
     <section id="hero" class="mb-[2rem] w-full">
       <div
         id="hero-bg"
-        class="landscape-layout flex h-[96vh] w-full animate-(--hero-animation) flex-col justify-between bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-bold text-(--off-white)"
+        class="landscape-layout relative flex h-[100vh] w-full animate-(--hero-animation) flex-col justify-between bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-bold text-(--off-white)"
       >
         <div
           id="hero-text"
@@ -186,6 +186,12 @@
               />
             </svg>
           </a>
+        </div>
+        <div
+          id="scroll-arrow"
+          class="absolute bottom-4 left-1/12 -translate-x-1/2 transform animate-bounce text-[2rem] text-(--off-black) transition md:left-1/2"
+        >
+          <span>v</span>
         </div>
       </div>
     </section>
