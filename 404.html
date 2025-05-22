@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Page Not Found | Michael Mandic &ndash; Software Engineer</title>
     <meta
       name="description"
@@ -28,12 +29,24 @@
       content="Michael, Mandic, Michael Mandic, Mihajlo, Mihajlo Mandic, software developer, software engineer, personal website, personal portfolio, portfolio, web developer, web designer, programmer, coder, swe, cs, computer science, serbia, belgrade, europe"
     />
   </head>
-  <body class="font-[Inter]">
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-(--off-black) text-center font-[Inter] text-(--off-white)"
+  >
     <div class="font-[JetBrains_Mono]">
-      <h1>404</h1>
-      <h2>Page Not Found</h2>
+      <h1
+        class="animate-(--no-page-found-animation) bg-linear-[0deg,#833AB4_0%,#FD1D1D_25%,#FCB045_50%,#FD1D1D_75%,#833AB4_100%] bg-size-[400px_400px] bg-clip-text text-[40vw]/[35vw] font-black text-transparent sm:text-[15rem]/[14rem]"
+      >
+        404
+      </h1>
+      <h2 class="text-[8vw] font-extrabold sm:text-[3rem]">Page Not Found</h2>
     </div>
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <a href="/">Go Back Home</a>
+    <p class="mx-[1.25vw] my-[2vw] text-[1.3rem] text-gray-400 sm:my-[0.5rem]">
+      Oops! The page you're looking for doesn't exist.
+    </p>
+    <a
+      class="mt-[5vw] bg-(--off-white) px-[0.4rem] py-[0.4rem] font-[JetBrains_Mono] text-[1.8rem] font-extrabold text-(--off-black) hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] sm:mt-[2rem]"
+      href="/"
+      >Go Back Home</a
+    >
   </body>
 </html>
