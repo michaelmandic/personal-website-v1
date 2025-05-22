@@ -31,4 +31,13 @@
   .landscape-layout {
     flex-direction: row;
   }
+  .landscape-title {
+    font-size: 4rem;
+  }
+  .landscape-gap {
+    gap: 0;
+  }
+  .landscape-subtitle {
+    font-size: 2rem;
+  }
 }
