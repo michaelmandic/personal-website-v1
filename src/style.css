@@ -27,3 +27,8 @@
   --hero-animation: heroAnimation 10s linear infinite forwards;
 }
 
+@media (max-height: 600px) {
+  .landscape-layout {
+    flex-direction: row;
+  }
+}
