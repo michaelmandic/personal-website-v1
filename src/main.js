@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollArrow = document.getElementById('scroll-arrow');
 
     window.addEventListener('scroll', () => {
-        const triggerPointHeader = window.innerHeight*0.6;
-        const triggerPointScrollArrow = window.innerHeight*0.3;
+        const triggerPointHeader = window.innerHeight*0.2;
+        const triggerPointScrollArrow = window.innerHeight*0.2;
 
         if (window.scrollY > triggerPointHeader) {
             header.classList.remove('opacity-0', 'pointer-events-none');
@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (window.scrollY > triggerPointScrollArrow) {
-            scrollArrow.classList.add('opacity-0', 'pointer-events-none');
+            scrollArrow.classList.add('opacity-0');
         } else {
-            scrollArrow.classList.remove('opacity-0', 'pointer-events-none');
+            scrollArrow.classList.remove('opacity-0');
         }
     });
 });
