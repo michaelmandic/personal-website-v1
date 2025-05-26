@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollArrow = document.getElementById('scroll-arrow');
 
     window.addEventListener('scroll', () => {
-        const triggerPointHeader = window.innerHeight*0.8;
-        const triggerPointScrollArrow = window.innerHeight*0.2;
+        const triggerPointHeader = window.innerHeight*0.6;
+        const triggerPointScrollArrow = window.innerHeight*0.3;
 
         if (window.scrollY > triggerPointHeader) {
             header.classList.remove('opacity-0', 'pointer-events-none');
