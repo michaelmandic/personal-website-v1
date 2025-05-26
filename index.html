@@ -69,16 +69,16 @@
     >
       <a
         href="https://mandic.dev"
-        class="group font-[JetBrains_Mono] font-extrabold text-(--off-white) transition-all hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] hover:text-(--off-black)"
+        class="group rounded-sm px-[0.2em] font-[JetBrains_Mono] font-extrabold text-(--off-white) transition-all hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] hover:text-(--off-black)"
       >
         <span
           class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent transition-all group-hover:text-(--off-black)"
           >mandic</span
         >.dev
       </a>
-      <nav class="flex items-center gap-[0.8rem]">
+      <div class="flex items-center gap-[0.8rem]">
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
           href="mailto:mihajlomandic27@gmail.com"
           target="_blank"
         >
@@ -96,7 +96,7 @@
           </svg>
         </a>
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
           href="https://www.linkedin.com/in/michael-mandic/"
           target="_blank"
         >
@@ -114,7 +114,7 @@
           </svg>
         </a>
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
           href="https://github.com/michaelmandic"
           target="_blank"
         >
@@ -131,30 +131,47 @@
             />
           </svg>
         </a>
-      </nav>
+      </div>
     </header>
     <section id="hero" class="mb-[2rem] w-full">
       <div
         id="hero-bg"
         class="landscape-layout relative flex h-[100svh] w-full animate-(--hero-animation) flex-col justify-between bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-bold text-(--off-white)"
       >
-        <div
-          id="hero-text"
-          class="landscape-gap flex flex-col gap-[4vw] self-start md:gap-[1rem]"
-        >
-          <h1
-            class="landscape-title text-[clamp(1rem,18vw,6rem)]/[clamp(0.5rem,25vw,8.5rem)] md:text-[6rem]/[8.5rem]"
+        <div id="hero-text" class="flex flex-col gap-[1rem] self-start">
+          <div
+            class="landscape-title text-[clamp(1rem,17vw,6rem)]/[1.4em] md:text-[6rem]/[1.4em]"
           >
-            <span class="bg-(--off-black)">Hi, I'm Michael!</span>
-          </h1>
-          <p
-            class="landscape-subtitle pr-[10vw] text-[clamp(1rem,6vw,2rem)]/[clamp(0,11vw,3rem)] md:text-3xl/[3rem]"
-          >
-            <span class="bg-(--off-black)"
-              >Software engineering student;<br />Based in Serbia;<br />EU
-              citizen;</span
+            <h1
+              class="inline rounded-sm bg-(--off-black) box-decoration-clone px-[0.2em]"
             >
-          </p>
+              Hi, I'm Michael!
+            </h1>
+          </div>
+          <div
+            class="landscape-subtitle gap-[0.5rem] pr-[10vw] text-[clamp(1rem,5vw,1.4rem)] md:text-2xl"
+          >
+            <div class="">
+              <span
+                class="rounded-sm bg-(--off-black) box-decoration-clone px-[0.4em] py-[0.2em] leading-[1.85em]"
+                >Software engineering student</span
+              >
+            </div>
+            <div class="h-[0.1em]"></div>
+            <div>
+              <span
+                class="rounded-sm bg-(--off-black) box-decoration-clone px-[0.4em] py-[0.2em] leading-[1.85em]"
+                >Based in Serbia</span
+              >
+            </div>
+            <div class="h-[0.1em]"></div>
+            <div>
+              <span
+                class="rounded-sm bg-(--off-black) box-decoration-clone px-[0.4em] py-[0.2em] leading-[1.85em]"
+                >EU citizen</span
+              >
+            </div>
+          </div>
         </div>
         <div
           id="hero-socials"
@@ -162,7 +179,7 @@
         >
           <a
             id="hero-email"
-            class="group flex items-center gap-[1rem] bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
+            class="group flex items-center gap-[1rem] rounded-sm bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
             href="mailto:mihajlomandic27@gmail.com"
             target="_blank"
           >
@@ -182,7 +199,7 @@
           </a>
           <a
             id="hero-linkedin"
-            class="group flex items-center gap-[1rem] bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
+            class="group flex items-center gap-[1rem] rounded-sm bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
             href="https://www.linkedin.com/in/michael-mandic/"
             target="_blank"
           >
@@ -202,7 +219,7 @@
           </a>
           <a
             id="hero-github"
-            class="group flex items-center gap-[1rem] bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
+            class="group flex items-center gap-[1rem] rounded-sm bg-(--off-black) px-[1rem] py-[0.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black)"
             href="https://github.com/michaelmandic"
             target="_blank"
           >
@@ -223,9 +240,9 @@
         </div>
         <div
           id="scroll-arrow"
-          class="pointer-events-none absolute bottom-4 left-1/12 -translate-x-1/2 transform animate-bounce text-[2rem] text-(--off-black) transition md:left-1/2"
+          class="absolute bottom-4 left-1/12 -translate-x-1/2 transform animate-bounce text-[2rem] text-(--off-black) transition md:left-1/2"
         >
-          <span>v</span>
+          <a href="#AboutMe">v</a>
         </div>
       </div>
     </section>

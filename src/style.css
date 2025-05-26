@@ -58,6 +58,10 @@
   navigation: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-green: #6FFF9D;
   --transparent-white: rgba(255, 255, 255, 0.1);
@@ -76,13 +80,11 @@
   }
   .landscape-title {
     font-size: 4rem;
-    line-height: 6rem;
   }
   .landscape-gap {
     gap: 0;
   }
   .landscape-subtitle {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 1.2rem;
   }
 }
