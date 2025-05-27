@@ -65,25 +65,22 @@
   <body class="flex flex-col items-center bg-(--off-black) font-[Inter]">
     <header
       id="header"
-      class="fixed top-0 z-[9999] flex h-[4rem] w-full items-center justify-between bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.75)] px-[1rem] backdrop-blur-sm md:px-[2rem]"
+      class="fixed top-0 z-[9999] flex h-[4rem] w-full items-center justify-between bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.5)] px-[1rem] backdrop-blur-sm md:px-[2rem]"
     >
       <a
         href="https://mandic.dev"
-        class="group rounded-sm px-[0.2em] font-[JetBrains_Mono] font-extrabold text-(--off-white) transition-all hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] hover:text-(--off-black)"
+        class="px-[0.2em] font-[JetBrains_Mono] font-medium text-(--off-white) hover:text-(--primary-green)"
       >
-        <span
-          class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent transition-all group-hover:text-(--off-black)"
-          >mandic</span
-        >.dev
+        <span class="text-(--primary-green)">mandic</span>.dev
       </a>
-      <div class="flex items-center gap-[0.8rem] px-[0.2rem]">
+      <div class="flex items-center gap-[1.2rem] px-[0.2rem]">
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[24px] w-[24px] items-center justify-center"
           href="mailto:mihajlomandic27@gmail.com"
           target="_blank"
         >
           <svg
-            class="scale-105 text-(--off-white) transition group-hover:text-(--off-black)"
+            class="scale-105 text-(--off-white) group-hover:text-(--primary-green)"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -96,12 +93,12 @@
           </svg>
         </a>
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[24px] w-[24px] items-center justify-center"
           href="https://www.linkedin.com/in/michael-mandic/"
           target="_blank"
         >
           <svg
-            class="scale-90 text-(--off-white) transition group-hover:text-(--off-black)"
+            class="scale-90 text-(--off-white) group-hover:text-(--primary-green)"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -114,12 +111,12 @@
           </svg>
         </a>
         <a
-          class="group flex h-[30px] w-[30px] items-center justify-center rounded-sm hover:bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%]"
+          class="group flex h-[24px] w-[24px] items-center justify-center"
           href="https://github.com/michaelmandic"
           target="_blank"
         >
           <svg
-            class="text-(--off-white) transition group-hover:text-(--off-black)"
+            class="text-(--off-white) group-hover:text-(--primary-green)"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -137,7 +134,7 @@
       <div class="px-[1rem] pt-[4rem] md:px-[2rem]">
         <div
           id="hero-bg"
-          class="landscape-layout relative flex h-[calc(100svh-5rem)] w-full animate-(--hero-animation) flex-col justify-between rounded-3xl bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-bold text-(--off-white) md:h-[calc(100svh-6rem)]"
+          class="landscape-layout relative flex h-[calc(100svh-5rem)] w-full animate-(--hero-animation) flex-col justify-between rounded-3xl bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-light text-(--off-white) md:h-[calc(100svh-6rem)]"
         >
           <div id="hero-text" class="flex flex-col gap-[1rem] self-start">
             <div
@@ -150,7 +147,7 @@
               </h1>
             </div>
             <div
-              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Inter] text-[1.5rem] text-(--off-black) sm:text-[2rem]"
+              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Inter] text-[1.5rem] font-medium text-(--off-black) sm:text-[2rem]"
             >
               <div class="md:max-w-[50vw]">
                 <span
@@ -163,13 +160,13 @@
 
           <a
             id="hero-email"
-            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl bg-(--off-black) px-[1rem] py-[0.5rem] text-[1.5rem] text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black) md:w-fit md:text-[2rem]"
+            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl bg-(--off-black) px-[1rem] py-[0.5rem] text-[1.5rem] font-light text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black) md:w-fit md:text-[2rem]"
             href="mailto:mihajlomandic27@gmail.com"
             target="_blank"
           >
             <span class="transition">Get In Touch</span>
             <svg
-              class="size-[2rem] scale-105 transition md:size-[2rem]"
+              class="size-[2rem] scale-105 transition group-hover:text-(--primary-green-dark) md:size-[2rem]"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -192,50 +189,63 @@
       </div>
     </section>
     <div
-      class="flex max-w-[46rem] flex-col items-center gap-[6rem] px-[1rem] py-[4rem]"
+      class="flex max-w-[60rem] flex-col items-center gap-[10rem] px-[1rem] py-[8rem]"
     >
       <section
         id="AboutMe"
-        class="flex w-full max-w-[44rem] flex-col gap-[2rem] text-(--off-white)"
+        class="flex w-full max-w-[60rem] flex-col items-center gap-[2rem] text-(--off-white)"
       >
-        <h2 class="font-[JetBrains_Mono] text-4xl font-bold">
-          <span
-            class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent"
-            >/</span
-          >About Me
-        </h2>
-        <p class="font-[Inter]">
-          I’m <b>Michael Mandic</b>, a software engineering student @
-          <i>University of Belgrade, School of Electrical Engineering.</i> I'm
-          passionate about computer science and full-stack development and I’m
-          eager to contribute to real-world projects and gain industry
-          experience.
+        <p
+          class="text-center text-2xl leading-[2rem] font-light md:text-4xl md:leading-[2.6rem]"
+        >
+          <span class="text-(--off-white) opacity-50">“</span> I’m
+          <span class="text-(--primary-green)">Michael Mandic</span>, a software
+          engineering student @
+          <span class="italic underline decoration-(--primary-green)"
+            >University of Belgrade, School of Electrical Engineering.</span
+          ><br />I'm passionate about computer science and full-stack
+          development and I’m eager to contribute to real-world projects and
+          gain industry experience<span class="text-(--primary-green)">! </span
+          ><span class="text-(--off-white) opacity-50">”</span>
         </p>
       </section>
       <section
         id="Skills"
-        class="flex w-full max-w-[44rem] flex-col gap-[2rem] text-(--off-white)"
+        class="flex w-full max-w-[60rem] flex-col gap-[2rem] text-(--off-white)"
       >
-        <h2 class="font-[JetBrains_Mono] text-4xl font-bold">
-          <span
-            class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent"
-            >/</span
-          >Skills
+        <h2 class="font-[JetBrains_Mono] text-5xl font-light">
+          <span class="text-(--primary-green)">/</span>Skills
         </h2>
-        <p>placeholder</p>
+        <p class="text-2xl font-light">placeholder</p>
       </section>
       <section
         id="GetInTouch"
-        class="flex w-full max-w-[44rem] flex-col gap-[2rem] text-(--off-white)"
+        class="flex w-full max-w-[60rem] flex-col gap-[2rem] text-(--off-white)"
       >
-        <h2 class="font-[JetBrains_Mono] text-4xl font-bold">
-          <span
-            class="bg-linear-[0deg,#2A7B9B_0%,#57C785_50%,#EDDD53_100%] bg-clip-text text-transparent"
-            >/</span
-          >Get In Touch
+        <h2 class="font-[JetBrains_Mono] text-5xl font-light">
+          <span class="text-(--primary-green)">/</span>Get In Touch
         </h2>
-        <p>placeholder</p>
+        <p class="text-2xl font-light">placeholder</p>
       </section>
     </div>
+    <footer
+      class="flex w-full flex-col items-center justify-center bg-black px-[1rem] py-[2rem] text-neutral-500 md:px-[2rem]"
+    >
+      <div class="max-w-[50rem] flex-initial">
+        <div
+          class="font-[JetBrains_Mono] text-2xl font-normal text-(--off-white)"
+        >
+          mandic.dev
+        </div>
+        <div>
+          &copy;2025 Michael Mandic. Source code under
+          <a
+            href=""
+            class="underline hover:text-(--off-white) hover:decoration-(--primary-green)"
+            >MIT license</a
+          >.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
