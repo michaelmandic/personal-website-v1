@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const triggerPointScrollArrow = window.innerHeight*0.2;
 
         if (window.scrollY > triggerPointHeader) {
-            header.classList.add('outline-[1px]', 'bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.75)]', 'backdrop-blur-sm', 'outline-(--transparent-white)');
+            header.classList.add('outline-[1px]', 'bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.75)]', 'outline-(--transparent-white)');
         } else {
-            header.classList.remove('outline-[1px]', 'bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.75)]', 'backdrop-blur-sm', 'outline-(--transparent-white)');
+            header.classList.remove('outline-[1px]', 'bg-linear-[180deg,#1e1e1e,50%,rgba(30,30,30,0.75)]', 'outline-(--transparent-white)');
         }
 
         if (window.scrollY > triggerPointScrollArrow) {
