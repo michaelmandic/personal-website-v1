@@ -79,12 +79,15 @@ html {
     flex-direction: row;
   }
   .landscape-title {
-    font-size: 4rem;
+    font-size: 15vh;
   }
   .landscape-gap {
     gap: 0;
   }
   .landscape-subtitle {
     font-size: 1.2rem;
+  }
+  .landscape-subtitle-width {
+    max-width: 50vw;
   }
 }
