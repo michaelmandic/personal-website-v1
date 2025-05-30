@@ -70,7 +70,9 @@
       content="Text that says MANDIC DOT DEV on a green gradient background"
     />
   </head>
-  <body class="flex flex-col items-center bg-(--off-black) font-[Inter]">
+  <body
+    class="flex flex-col items-center bg-(--off-black) font-[Inter] text-white"
+  >
     <header
       id="header"
       class="fixed top-0 z-[9999] flex h-[5rem] w-full items-center justify-center bg-[rgba(16,19,27,0.8)] px-[1rem] font-[Mona_Sans] backdrop-blur-sm transition-[height] md:px-[2rem]"
@@ -223,14 +225,14 @@
       id="AboutMe"
       class="flex w-full flex-col items-center justify-center px-[1rem] pb-[6rem] text-white sm:pb-[10rem] md:px-[2rem]"
     >
-      <div class="max-w-[76rem]">
+      <div class="max-w-[80rem]">
         <h2
           class="pb-[4rem] text-center font-[Mona_Sans] text-5xl font-semibold tracking-tighter md:text-5xl"
         >
           About Me
         </h2>
         <p
-          class="text-3xl leading-[2rem] font-normal md:text-4xl md:leading-[2.6rem]"
+          class="max-w-[70rem] text-3xl leading-[2rem] font-normal md:text-4xl md:leading-[2.6rem]"
         >
           I’m
           <span class="text-(--primary-green)">Michael Mandic</span>, a software
@@ -255,7 +257,13 @@
         >
           Skills and Technologies
         </h2>
-        <div class="flex w-full flex-col gap-[1px] bg-white/10 p-[1px]">
+      </div>
+      <div
+        class="flex w-full flex-col items-center justify-center border-y-[2px] border-white/10"
+      >
+        <div
+          class="flex w-full max-w-[80rem] flex-col gap-[1px] bg-white/10 px-[1px]"
+        >
           <div
             class="flex w-full flex-wrap gap-[1px] text-white *:min-w-[16rem] *:grow *:basis-0 *:pl-[1rem] *:sm:pl-[0.5rem] *:md:min-w-[20rem]"
           >
