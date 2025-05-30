@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward,link,mail&display=block"
+    />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="me" href="https://mastodon.social/@michaelmandic" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -104,18 +108,11 @@
           href="mailto:mihajlomandic27@gmail.com"
           target="_blank"
         >
-          <svg
-            class="scale-105 text-white transition-[opacity] group-hover:opacity-[50%]"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+          <span
+            class="material-symbols-outlined text-white transition-[opacity] group-hover:opacity-[50%]"
           >
-            <path
-              fill="currentColor"
-              d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"
-            />
-          </svg>
+            mail
+          </span>
         </a>
         <a
           class="group flex h-[24px] w-[24px] items-center justify-center"
@@ -163,7 +160,7 @@
         >
           <div id="hero-text" class="flex flex-col gap-[1rem] self-start">
             <div
-              class="landscape-title text-[clamp(1rem,15vw,6rem)]/[1.5em] md:text-[6rem]/[1.5em]"
+              class="landscape-title pl-[0.1rem] text-[clamp(1rem,15vw,6rem)]/[1.5em] md:text-[6rem]/[1.5em]"
             >
               <h1
                 class="inline rounded-xl border-2 border-white/25 bg-(--off-black) box-decoration-clone px-[0.2em] tracking-tighter outline-2 outline-white/25"
@@ -172,7 +169,7 @@
               </h1>
             </div>
             <div
-              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold text-black opacity-80 sm:text-[2rem]"
+              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold text-black opacity-80 sm:text-[1.75rem] md:text-[2rem]"
             >
               <div class="md:max-w-[50vw]">
                 <span
@@ -190,25 +187,25 @@
             target="_blank"
           >
             <span class="transition">Get In Touch</span>
-            <svg
-              class="size-[2rem] scale-105 transition group-hover:text-(--primary-green-dark) md:size-[2rem]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+            <span
+              class="material-symbols-outlined material-size-40 group-hover:text-(--primary-green)"
             >
-              <path
-                fill="currentColor"
-                d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"
-              />
-            </svg>
+              mail
+            </span>
           </a>
 
           <div
             id="scroll-arrow"
             class="absolute bottom-[6rem] left-1/2 -translate-x-1/2 transform animate-bounce font-[Mona_Sans] text-[2rem] font-normal text-black opacity-80 transition hover:text-white md:bottom-4"
           >
-            <a href="#AboutMe">v</a>
+            <a href="#AboutMe"
+              ><span
+                class="material-symbols-outlined material-size-40"
+                style="font-variation-settings: &quot;wght&quot; 600"
+              >
+                arrow_downward
+              </span></a
+            >
           </div>
         </div>
       </div>
@@ -216,27 +213,26 @@
     <div class="flex w-full flex-col items-center">
       <section
         id="AboutMe"
-        class="flex w-full max-w-[60rem] flex-col items-center justify-center gap-[2rem] px-[1rem] py-[12rem] text-white md:px-[2rem] md:py-[12rem]"
+        class="flex w-full flex-col items-center justify-center gap-[2rem] px-[1rem] py-[4rem] text-white md:px-[2rem] md:py-[6rem]"
       >
         <p
-          class="text-center text-3xl leading-[2rem] font-light md:text-4xl md:leading-[2.6rem]"
+          class="max-w-[64rem] text-3xl leading-[2rem] font-normal md:text-4xl md:leading-[2.6rem]"
         >
-          <span class="text-white opacity-50">“</span> I’m
+          I’m
           <span class="text-(--primary-green)">Michael Mandic</span>, a software
           engineering student @
           <span class="italic underline decoration-(--primary-green)"
             >University of Belgrade, School of Electrical Engineering.</span
           ><br />I'm passionate about computer science and full-stack
           development and I’m eager to contribute to real-world projects and
-          gain industry experience<span class="text-(--primary-green)">! </span
-          ><span class="text-white opacity-50">”</span>
+          gain industry experience<span class="text-(--primary-green)">! </span>
         </p>
       </section>
-      <div
-        class="flex w-full flex-col items-center justify-center bg-(--off-black-lighter) px-[1rem] py-[4rem] md:px-[2rem] md:py-[6rem]"
+      <section
+        id="Skills"
+        class="flex w-full flex-col items-center justify-center bg-(--off-black-lighter) px-[1rem] py-[4rem] outline-2 outline-white/10 md:px-[2rem] md:py-[6rem]"
       >
-        <section
-          id="Skills"
+        <div
           class="flex w-full max-w-[64rem] flex-col items-center gap-[4rem] text-white"
         >
           <h2
@@ -245,7 +241,7 @@
             My skills and technologies
           </h2>
           <div
-            class="skills-container w-full text-white *:outline-1 *:outline-(--transparent-white)"
+            class="skills-container w-full text-white *:outline-2 *:outline-white/10"
           >
             <div
               id="Python"
@@ -665,16 +661,18 @@
               </div>
             </div>
           </div>
-        </section>
-      </div>
-      <div
-        class="flex w-full flex-col items-center justify-center bg-(--primary-green) px-[1rem] py-[4rem] md:px-[2rem] md:py-[10rem]"
+        </div>
+      </section>
+      <section
+        class="flex w-full flex-col items-center justify-center px-[1rem] py-[4rem] md:px-[2rem] md:py-[10rem]"
       >
-        <section
+        <div
           id="GetInTouch"
           class="flex w-full max-w-[64rem] flex-col gap-[4rem] text-white"
         >
-          <h2 class="text-4xl font-bold md:w-[24rem] md:text-6xl">
+          <h2
+            class="text-center font-[Mona_Sans] text-5xl font-semibold tracking-tighter md:text-5xl"
+          >
             Get In Touch
           </h2>
           <div class="font-ligth w-full text-xl md:text-2xl">
@@ -691,8 +689,8 @@
               >LinkedIn</a
             >.
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
     <footer
       class="flex w-full flex-col items-center justify-center bg-black px-[1rem] py-[2rem] text-neutral-500 md:px-[2rem]"

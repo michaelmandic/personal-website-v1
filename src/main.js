@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 1) {
-                header.classList.add('outline-[1px]', 'outline-(--transparent-white)', 'h-[4rem]');
+                header.classList.add('outline-2', 'outline-white/10', 'h-[4rem]');
                 header.classList.remove('h-[5rem]')
             } else {
-                header.classList.remove('outline-[1px]', 'outline-(--transparent-white)', 'h-[4rem]');
+                header.classList.remove('outline-2', 'outline-white/10', 'h-[4rem]');
                 header.classList.add('h-[5rem]')
             };
         });
