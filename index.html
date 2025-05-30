@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="me" href="https://mastodon.social/@michaelmandic" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,14 +69,35 @@
   <body class="flex flex-col items-center bg-(--off-black) font-[Inter]">
     <header
       id="header"
-      class="fixed top-0 z-[9999] flex h-[4rem] w-full items-center justify-between bg-[rgba(30,30,30,0.8)] px-[1rem] backdrop-blur-sm md:px-[2rem]"
+      class="fixed top-0 z-[9999] flex h-[5rem] w-full items-center justify-between bg-[rgba(16,19,27,0.8)] px-[1rem] font-[Mona_Sans] backdrop-blur-sm transition-[height] md:px-[1.4rem]"
     >
-      <a
-        href="https://mandic.dev"
-        class="px-[0.2em] font-[JetBrains_Mono] font-medium text-(--off-white) hover:text-(--primary-green)"
-      >
-        <span class="text-(--primary-green)">mandic</span>.dev
-      </a>
+      <div class="flex flex-row items-center gap-[0.5rem] text-white">
+        <a
+          href="https://mandic.dev"
+          class="w-fit px-[0.2em] text-(--primary-green) transition-[opacity] hover:opacity-[50%]"
+        >
+          <svg
+            class=""
+            width="32"
+            height="32"
+            viewBox="0 0 67 72"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_101_22)">
+              <path
+                d="M0.500977 72V1.60001H15.605V11.84H18.677L16.245 13.632C16.245 9.62134 17.397 6.42134 19.701 4.03201C22.005 1.55734 24.8637 0.320007 28.277 0.320007C31.9463 0.320007 34.805 1.89868 36.853 5.05601C38.901 8.21334 39.925 12.3947 39.925 17.6L37.621 11.84H41.205L40.053 13.632C40.053 9.62134 41.1623 6.42134 43.381 4.03201C45.5997 1.55734 48.5863 0.320007 52.341 0.320007C56.6077 0.320007 60.0637 1.94134 62.709 5.18401C65.3543 8.34134 66.677 12.6933 66.677 18.24V72H50.165V19.52C50.165 17.5573 49.7383 16.064 48.885 15.04C48.0317 13.9307 46.7943 13.376 45.173 13.376C43.5517 13.376 42.3143 13.9307 41.461 15.04C40.6077 16.064 40.181 17.5573 40.181 19.52V72H26.997V19.52C26.997 17.5573 26.5703 16.064 25.717 15.04C24.8637 13.9307 23.6263 13.376 22.005 13.376C20.3837 13.376 19.1463 13.9307 18.293 15.04C17.4397 16.064 17.013 17.5573 17.013 19.52V72H0.500977Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_101_22">
+                <rect width="67" height="72" fill="currentColor" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
       <div class="flex items-center gap-[1.2rem] px-[0.2rem]">
         <a
           class="group flex h-[24px] w-[24px] items-center justify-center"
@@ -80,7 +105,7 @@
           target="_blank"
         >
           <svg
-            class="scale-105 text-(--off-white) group-hover:text-(--primary-green)"
+            class="scale-105 text-white transition-[opacity] group-hover:opacity-[50%]"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -98,7 +123,7 @@
           target="_blank"
         >
           <svg
-            class="scale-90 text-(--off-white) group-hover:text-(--primary-green)"
+            class="scale-90 text-white transition-[opacity] group-hover:opacity-[50%]"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -116,7 +141,7 @@
           target="_blank"
         >
           <svg
-            class="text-(--off-white) group-hover:text-(--primary-green)"
+            class="text-white transition-[opacity] group-hover:opacity-[50%]"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -131,23 +156,23 @@
       </div>
     </header>
     <section id="hero" class="w-full">
-      <div class="px-[1rem] pt-[4rem] md:px-[2rem]">
+      <div class="px-[1rem] pt-[5rem] md:px-[1.4rem]">
         <div
           id="hero-bg"
-          class="landscape-layout relative flex h-[calc(100svh-6rem)] w-full animate-(--hero-animation) flex-col justify-between rounded-3xl bg-(--off-white) bg-linear-[0deg,#2A7B9B_0%,#57C785_25%,#EDDD53_50%,#57C785_75%,#2A7B9B_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-light text-(--off-white) md:h-[calc(100svh-6rem)]"
+          class="landscape-layout relative flex h-[calc(100svh-7rem)] w-full animate-(--hero-animation) flex-col justify-between rounded-3xl border-4 border-white/25 bg-linear-[0deg,#97f0bd_0%,#44d882_20%_30%,#44d8ae_49%_51%,#44d882_60%_80%,#97f0bd_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-[JetBrains_Mono] font-bold text-white outline-2 outline-white/10 md:h-[calc(100svh-7rem)]"
         >
           <div id="hero-text" class="flex flex-col gap-[1rem] self-start">
             <div
               class="landscape-title text-[clamp(1rem,15vw,6rem)]/[1.4em] md:text-[6rem]/[1.4em]"
             >
               <h1
-                class="inline rounded-xl bg-(--off-black) box-decoration-clone px-[0.2em]"
+                class="inline rounded-xl border-2 border-white/25 bg-(--off-black) box-decoration-clone px-[0.2em] tracking-tighter outline-2 outline-white/25"
               >
                 Hi, I'm Michael!
               </h1>
             </div>
             <div
-              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Inter] text-[1.5rem] font-medium text-(--off-black) sm:text-[2rem]"
+              class="landscape-subtitle gap-[0.5rem] px-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold text-black opacity-80 sm:text-[2rem]"
             >
               <div class="md:max-w-[50vw]">
                 <span
@@ -160,7 +185,7 @@
 
           <a
             id="hero-email"
-            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl bg-(--off-black) px-[1rem] py-[0.5rem] text-[1.5rem] font-light text-(--off-white) hover:bg-(--off-white) hover:text-(--off-black) md:w-fit md:text-[2rem]"
+            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl border-2 border-white/25 bg-(--off-black) px-[1rem] py-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold tracking-tight text-white outline-2 outline-white/25 transition hover:bg-white hover:text-black hover:outline-black/25 md:w-fit md:text-[2rem]"
             href="mailto:mihajlomandic27@gmail.com"
             target="_blank"
           >
@@ -181,7 +206,7 @@
 
           <div
             id="scroll-arrow"
-            class="absolute bottom-[6rem] left-1/2 -translate-x-1/2 transform animate-bounce text-[2rem] font-light text-(--off-black) hover:text-(--off-white) md:bottom-4"
+            class="absolute bottom-[6rem] left-1/2 -translate-x-1/2 transform animate-bounce font-[Mona_Sans] text-[2rem] font-normal text-black opacity-80 transition hover:text-white md:bottom-4"
           >
             <a href="#AboutMe">v</a>
           </div>
@@ -191,12 +216,12 @@
     <div class="flex w-full flex-col items-center">
       <section
         id="AboutMe"
-        class="flex w-full max-w-[60rem] flex-col items-center justify-center gap-[2rem] px-[1rem] py-[12rem] text-(--off-white) md:px-[2rem] md:py-[12rem]"
+        class="flex w-full max-w-[60rem] flex-col items-center justify-center gap-[2rem] px-[1rem] py-[12rem] text-white md:px-[2rem] md:py-[12rem]"
       >
         <p
           class="text-center text-3xl leading-[2rem] font-light md:text-4xl md:leading-[2.6rem]"
         >
-          <span class="text-(--off-white) opacity-50">“</span> I’m
+          <span class="text-white opacity-50">“</span> I’m
           <span class="text-(--primary-green)">Michael Mandic</span>, a software
           engineering student @
           <span class="italic underline decoration-(--primary-green)"
@@ -204,25 +229,27 @@
           ><br />I'm passionate about computer science and full-stack
           development and I’m eager to contribute to real-world projects and
           gain industry experience<span class="text-(--primary-green)">! </span
-          ><span class="text-(--off-white) opacity-50">”</span>
+          ><span class="text-white opacity-50">”</span>
         </p>
       </section>
       <div
-        class="flex w-full flex-col items-center justify-center bg-(--beige) px-[1rem] py-[4rem] md:px-[2rem] md:py-[10rem]"
+        class="flex w-full flex-col items-center justify-center bg-(--off-black-lighter) px-[1rem] py-[4rem] md:px-[2rem] md:py-[6rem]"
       >
         <section
           id="Skills"
-          class="flex w-full max-w-[64rem] flex-col gap-[4rem] text-(--off-black) md:flex-row"
+          class="flex w-full max-w-[64rem] flex-col items-center gap-[4rem] text-white"
         >
           <h2
-            class="font-[JetBrains_Mono] text-4xl font-normal md:w-[24rem] md:text-6xl"
+            class="text-center font-[Mona_Sans] text-5xl font-semibold tracking-tighter md:text-5xl"
           >
-            Skills
+            My skills and technologies
           </h2>
-          <div class="skills-container w-full">
+          <div
+            class="skills-container w-full text-white *:outline-1 *:outline-(--transparent-white)"
+          >
             <div
               id="Python"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -275,15 +302,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">Python</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  Python
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Programming language
                 </div>
               </div>
             </div>
             <div
               id="C++"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -332,15 +363,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">C++</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  C++
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Programming language
                 </div>
               </div>
             </div>
             <div
               id="JavaScript"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -369,15 +404,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">JavaScript</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  JavaScript
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Programming language
                 </div>
               </div>
             </div>
             <div
               id="HTML"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -416,15 +455,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">HTML</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  HTML
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Markup language
                 </div>
               </div>
             </div>
             <div
               id="CSS"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -473,15 +516,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">CSS</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  CSS
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Stylesheet language
                 </div>
               </div>
             </div>
             <div
               id="TailwindCSS"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -505,13 +552,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">TailwindCSS</div>
-                <div class="text-xs opacity-80 md:text-base">CSS framework</div>
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  TailwindCSS
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
+                  CSS framework
+                </div>
               </div>
             </div>
             <div
               id="Git"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -535,15 +588,19 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">Git</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  Git
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   Version control system
                 </div>
               </div>
             </div>
             <div
               id="VSCode"
-              class="flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -582,17 +639,27 @@
               </div>
 
               <div>
-                <div class="text-base font-medium md:text-xl">VS Code</div>
-                <div class="text-xs opacity-80 md:text-base">Code editor</div>
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  VS Code
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
+                  Code editor
+                </div>
               </div>
             </div>
             <div
               id="VSCode"
-              class="skills-languages flex flex-row items-start gap-[0.5rem] rounded-2xl bg-(--off-white) p-[1rem] md:gap-[1rem]"
+              class="skills-languages flex flex-row items-start gap-[0.5rem] rounded-xl bg-(--skill-card-bg) p-[1rem] md:gap-[1rem]"
             >
               <div>
-                <div class="text-base font-medium md:text-xl">Languages</div>
-                <div class="text-xs opacity-80 md:text-base">
+                <div
+                  class="font-[Mona_Sans] text-base font-semibold md:text-[1.1rem]"
+                >
+                  Languages
+                </div>
+                <div class="text-2xs font-normal opacity-50 md:text-[0.9rem]">
                   English (Fluent), Serbian (Native), German (Conversational)
                 </div>
               </div>
@@ -605,24 +672,22 @@
       >
         <section
           id="GetInTouch"
-          class="flex w-full max-w-[64rem] flex-col items-start justify-center gap-[4rem] text-(--off-black) md:flex-row md:items-center"
+          class="flex w-full max-w-[64rem] flex-col gap-[4rem] text-white"
         >
-          <h2
-            class="font-[JetBrains_Mono] text-4xl font-normal md:w-[24rem] md:text-6xl"
-          >
+          <h2 class="text-4xl font-bold md:w-[24rem] md:text-6xl">
             Get In Touch
           </h2>
           <div class="font-ligth w-full text-xl md:text-2xl">
             You can contact me by sending an email to
             <a
               href="mailto:mihajlomandic27@gmail.com"
-              class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-(--off-white) hover:decoration-[rgba(256,256,256,0.5)]"
+              class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-white hover:decoration-[rgba(256,256,256,0.5)]"
               >mihajlomandic27@gmail.com</a
             >
             or by messaging me on
             <a
               href="https://www.linkedin.com/in/michael-mandic/"
-              class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-(--off-white) hover:decoration-[rgba(256,256,256,0.5)]"
+              class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-white hover:decoration-[rgba(256,256,256,0.5)]"
               >LinkedIn</a
             >.
           </div>
@@ -633,16 +698,14 @@
       class="flex w-full flex-col items-center justify-center bg-black px-[1rem] py-[2rem] text-neutral-500 md:px-[2rem]"
     >
       <div class="max-w-[50rem] flex-initial">
-        <div
-          class="font-[JetBrains_Mono] text-2xl font-normal text-(--off-white)"
-        >
+        <div class="font-[JetBrains_Mono] text-2xl font-normal text-white">
           mandic.dev
         </div>
         <div>
           &copy;2025 Michael Mandic. Source code under
           <a
             href=""
-            class="underline hover:text-(--off-white) hover:decoration-(--primary-green)"
+            class="underline hover:text-white hover:decoration-(--primary-green)"
             >MIT license</a
           >.
         </div>
