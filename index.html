@@ -72,17 +72,15 @@
       content="Text that says MANDIC DOT DEV on a green gradient background"
     />
   </head>
-  <body
-    class="flex flex-col items-center bg-(--off-black) font-[Inter] text-white"
-  >
+  <body class="flex flex-col items-center bg-white font-[Inter] text-black">
     <header
       id="header"
-      class="fixed top-0 z-[9999] flex h-[5rem] w-full items-center justify-center bg-[hsl(0,0%,8%)] px-[1rem] font-[Mona_Sans] backdrop-blur-sm transition-[height] md:px-[2rem]"
+      class="fixed top-0 z-[9999] flex h-[5rem] w-full items-center justify-center bg-white/50 px-[1rem] font-[Mona_Sans] backdrop-blur-3xl transition-[height] md:px-[2rem]"
     >
       <div
         class="flex h-full w-full max-w-[80rem] items-center justify-between"
       >
-        <div class="flex flex-row items-center gap-[0.5rem] text-white">
+        <div class="flex flex-row items-center gap-[0.5rem] text-black">
           <a
             href="https://mandic.dev"
             class="w-fit px-[0.2em] text-(--primary-green) transition-[opacity] hover:opacity-[50%]"
@@ -111,7 +109,7 @@
             target="_blank"
           >
             <span
-              class="material-symbols-outlined text-white transition-[opacity] group-hover:opacity-[50%]"
+              class="material-symbols-outlined text-black transition-[opacity] group-hover:opacity-[50%]"
             >
               mail
             </span>
@@ -122,7 +120,7 @@
             target="_blank"
           >
             <svg
-              class="scale-90 text-white transition-[opacity] group-hover:opacity-[50%]"
+              class="scale-90 text-black transition-[opacity] group-hover:opacity-[50%]"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -140,7 +138,7 @@
             target="_blank"
           >
             <svg
-              class="text-white transition-[opacity] group-hover:opacity-[50%]"
+              class="text-black transition-[opacity] group-hover:opacity-[50%]"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -163,14 +161,14 @@
       >
         <div
           id="hero-bg"
-          class="landscape-layout relative flex h-[clamp(30rem,calc(100svh-7rem),40rem)] w-full max-w-[80rem] animate-(--hero-animation) flex-col justify-between rounded-3xl border-4 border-white/25 bg-linear-[0deg,#97f0bd_0%,#44d882_20%_30%,#44d8ae_49%_51%,#44d882_60%_80%,#97f0bd_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-bold text-white outline-2 outline-white/10"
+          class="landscape-layout relative flex h-[clamp(30rem,calc(100svh-7rem),40rem)] w-full max-w-[80rem] animate-(--hero-animation) flex-col justify-between rounded-3xl border-4 border-white/25 bg-linear-[0deg,#97f0bd_0%,#44d882_20%_30%,#44d8ae_49%_51%,#44d882_60%_80%,#97f0bd_100%] bg-size-[700px_700px] bg-clip-border p-[1rem] font-bold text-black outline-2 outline-white/10"
         >
           <div id="hero-text" class="flex flex-col gap-[1rem] self-start">
             <div
               class="landscape-title pl-[0.1rem] text-[clamp(1rem,15vw,6rem)]/[1.5em] md:text-[6rem]/[1.5em]"
             >
               <h1
-                class="inline rounded-xl border-2 border-white/25 bg-(--off-black) box-decoration-clone px-[0.2em] tracking-tight outline-2 outline-white/25"
+                class="inline rounded-xl border-2 border-white/25 bg-white box-decoration-clone px-[0.2em] tracking-tight outline-2 outline-white/25"
               >
                 Hi, I'm Michael!
               </h1>
@@ -189,7 +187,7 @@
 
           <a
             id="hero-getintouch"
-            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl border-2 border-white/25 bg-(--off-black) px-[1rem] py-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold tracking-tight text-white outline-2 outline-white/25 transition hover:bg-white hover:text-black hover:outline-black/25 md:w-fit md:text-[2rem]"
+            class="group flex w-full items-center justify-between gap-[1rem] self-end rounded-xl border-2 border-white/25 bg-white px-[1rem] py-[0.5rem] font-[Mona_Sans] text-[1.5rem] font-semibold tracking-tight text-black outline-2 outline-white/25 transition hover:bg-white hover:text-black hover:outline-black/25 md:w-fit md:text-[2rem]"
             href="#GetInTouch"
           >
             <span class="transition">Get In Touch</span>
@@ -220,7 +218,7 @@
     <!--About Me-->
     <section
       id="AboutMe"
-      class="flex w-full flex-col items-center justify-center px-[1rem] pb-[6rem] text-white sm:pb-[10rem] md:px-[2rem]"
+      class="flex w-full flex-col items-center justify-center px-[1rem] pb-[6rem] text-black sm:pb-[10rem] md:px-[2rem]"
     >
       <div class="max-w-[80rem]">
         <h2
@@ -229,21 +227,20 @@
           About Me
         </h2>
         <p
-          class="max-w-[60rem] text-center text-[1.75rem] leading-[2rem] font-normal text-[hsl(0_0%_100%_/_80%)] md:text-[2rem] md:leading-[2.6rem]"
+          class="max-w-[60rem] text-center text-[1.75rem] leading-[2rem] font-normal text-[hsl(0,0%,0%,80%)] md:text-[2rem] md:leading-[2.6rem]"
         >
           I’m
           <span class="text-(--primary-green)">Michael Mandic</span>, a software
           engineering student @
-          <span
-            class="text-[hsl(0_0%_100%)] italic underline decoration-(--primary-green)"
+          <span class="text-black italic underline decoration-(--primary-green)"
             >University of Belgrade, School of Electrical Engineering.</span
           >
           I'm passionate about
-          <span class="text-[hsl(0_0%_100%)]">computer science</span> and
-          <span class="text-[hsl(0_0%_100%)]">full-stack development</span> and
-          I’m eager to contribute to
-          <span class="text-[hsl(0_0%_100%)]">real-world projects</span> and
-          gain <span class="text-[hsl(0_0%_100%)]">industry experience</span
+          <span class="text-black">computer science</span> and
+          <span class="text-black">full-stack development</span> and I’m eager
+          to contribute to
+          <span class="text-black">real-world projects</span> and gain
+          <span class="text-black">industry experience</span
           ><span class="text-(--primary-green)">! </span>
         </p>
       </div>
@@ -252,9 +249,9 @@
     <!--Skills-->
     <section
       id="Skills"
-      class="flex w-full flex-col items-center justify-center bg-(--off-black) pb-[6rem] sm:pb-[10rem]"
+      class="flex w-full flex-col items-center justify-center bg-white pb-[6rem] sm:pb-[10rem]"
     >
-      <div class="flex w-full max-w-[80rem] flex-col items-center text-white">
+      <div class="flex w-full max-w-[80rem] flex-col items-center text-black">
         <h2
           class="pb-[4rem] text-center font-[Mona_Sans] text-5xl font-semibold tracking-tighter md:text-5xl"
         >
@@ -262,17 +259,17 @@
         </h2>
       </div>
       <div
-        class="flex w-full flex-col items-center justify-center border-y-[2px] border-white/10"
+        class="flex w-full flex-col items-center justify-center border-y-[2px] border-black/10"
       >
         <div
-          class="flex w-full max-w-[80rem] flex-col gap-[1px] bg-white/10 lg:px-[1px]"
+          class="flex w-full max-w-[80rem] flex-col gap-[1px] bg-black/10 lg:px-[1px]"
         >
           <div
-            class="flex w-full flex-wrap gap-[1px] text-white *:min-w-[16rem] *:grow *:basis-0 *:pl-[1rem] *:sm:pl-[0.5rem] *:md:min-w-[20rem]"
+            class="flex w-full flex-wrap gap-[1px] text-black *:min-w-[16rem] *:grow *:basis-0 *:bg-white *:pl-[1rem] *:sm:pl-[0.5rem] *:md:min-w-[20rem]"
           >
             <div
               id="Python"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -336,7 +333,7 @@
             </div>
             <div
               id="C++"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -396,7 +393,7 @@
             </div>
             <div
               id="JavaScript"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -436,7 +433,7 @@
             </div>
             <div
               id="HTML"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -486,7 +483,7 @@
             </div>
             <div
               id="CSS"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -528,7 +525,7 @@
             </div>
             <div
               id="TailwindCSS"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -563,7 +560,7 @@
             </div>
             <div
               id="Git"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -598,7 +595,7 @@
             </div>
             <div
               id="VSCode"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <svg
@@ -648,7 +645,7 @@
             </div>
             <div
               id="Linux"
-              class="flex flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
+              class="flex flex-row items-start gap-[0.5rem] p-[0.5rem] md:gap-[1rem] md:p-[1rem]"
             >
               <div class="flex items-center justify-center">
                 <img
@@ -673,7 +670,7 @@
           </div>
           <div
             id="Languages"
-            class="skills-languages flex w-full flex-row items-start gap-[0.5rem] bg-(--skill-card-bg) p-[1rem] pl-[1.5rem] sm:pl-[1rem] md:gap-[1rem]"
+            class="skills-languages flex w-full flex-row items-start gap-[0.5rem] bg-white p-[1rem] pl-[1.5rem] sm:pl-[1rem] md:gap-[1rem]"
           >
             <div>
               <div
@@ -695,7 +692,7 @@
       id="GetInTouch"
       class="flex w-full flex-col items-center justify-center px-[1rem] pb-[6rem] sm:pb-[10rem] md:px-[2rem]"
     >
-      <div class="flex w-full max-w-[64rem] flex-col text-white">
+      <div class="flex w-full max-w-[64rem] flex-col text-black">
         <h2
           class="pb-[4rem] text-center font-[Mona_Sans] text-5xl font-semibold tracking-tighter md:text-5xl"
         >
@@ -705,13 +702,13 @@
           You can contact me by sending an email to
           <a
             href="mailto:mihajlomandic27@gmail.com"
-            class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-white hover:decoration-[rgba(256,256,256,0.5)]"
+            class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-(--primary-green) hover:decoration-[rgba(256,256,256,0.5)]"
             >mihajlomandic27@gmail.com</a
           >
           or by messaging me on
           <a
             href="https://www.linkedin.com/in/michael-mandic/"
-            class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-white hover:decoration-[rgba(256,256,256,0.5)]"
+            class="rounded-md bg-[rgba(0,0,0,0.1)] px-[0.2rem] underline decoration-[rgba(0,0,0,0.5)] hover:bg-[rgba(256,256,256,0.1)] hover:text-(--primary-green) hover:decoration-[rgba(256,256,256,0.5)]"
             >LinkedIn</a
           >.
         </div>

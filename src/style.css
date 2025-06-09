@@ -69,8 +69,8 @@ html {
 /* Global Variables */
 
 :root {
-  --primary-green: #2CEB7C;
-  --primary-green-dark: #12CD60;
+  --primary-green-light: #2CEB7C;
+  --primary-green: #12CD60;
   --dark-green-bg: #0a3c1f;
   --transparent-white: hsla(0, 0%, 100%, 0.1);
   --transparent-black: hsla(0, 0%, 0%, 0.1);
